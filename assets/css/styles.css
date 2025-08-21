@@ -32,7 +32,7 @@ header nav ul {
 .navbar li a:hover {
     display: flex;
     transform: scale(1.2);
-    background-color: rgb(105, 122, 103);
+    background-color: rgb(112, 173, 105);
     padding: 3px;
 }
 
