@@ -1,10 +1,10 @@
 body {
-    display: flex;
-    flex-direction: column;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1rem;
     color: white;
     background-color:rgb(3, 3, 34);
+    height: 100vh;
+    width: 100vw;
 }
 
 header {
@@ -19,7 +19,7 @@ header nav ul {
     display: flex;
     list-style-type: none;
     padding: 5px;
-    gap: 2rem;
+    gap: 20px;
 }
 
 .navbar li a {
@@ -36,34 +36,62 @@ header nav ul {
     padding: 3px;
 }
 
-.intro {
+.intro_grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    font-size: clamp(10px, 2vw, 24px);
+    padding: 10px;
+    margin: 15px;
+}
+
+.box1-Span {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    border: 2px solid transparent;
+}
+
+.box1-Span img {
+    width: clamp(200px, 3vw, 300px);
+    height: clamp(250px, 4vw, 350px);
+}
+
+.profile-info-box2 {
     display: flex;
     flex-direction: column;
-    font-size: 1.2rem;
-    padding: 10px;
+    margin-left: 10px;
+    font-size: clamp(16px, 2vw, 24px);
+    align-items: center;
+}
+
+.social-icons-box3 a {
     margin: 10px;
-}
-.profile-picture {
-    flex-wrap: wrap;
-    align-self: center;
-    border: 2px solid teal;
-    border-radius: 5% 50% 2% 40%;
-    padding: 10px;
-    margin-left: 20rem;
-    margin-top: 20px;
-    width: 15rem;
-    height: 15rem;
-}
-
-.profile-info {
-    flex-wrap: wrap;
-    margin-top: -10rem;
-    margin-left: 20px;
-    font-size: 30px;
-}
-
-.social-icons a {
-    margin-left: 20px;
-    font-size: 20px;
+    font-size: clamp(16px, 2vw, 24px);
     color: rgb(79, 175, 127);
+}
+
+/* media queries for breakpoints */
+/* Large screens (1200px and above) */
+@media (min-width: 1200px) {
+  .box1-Span img {
+    width: 320px;
+    height: 370px;
+  }
+}
+
+/* Tablets (768px – 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .box1-Span img {
+    width: 260px;
+    height: 310px;
+  }
+}
+
+/* Mobile phones (below 768px) */
+@media (max-width: 767px) {
+  .box1-Span img {
+    width: 200px;
+    height: 250px;
+  }
 }
