@@ -49,12 +49,13 @@ header nav ul {
     display: grid;
     grid-column: 2;
     grid-row: 1 / span 2;
-    border: 2px solid transparent;
+    width: 250px;
 }
 
 .box1-Span img {
     width: clamp(200px, 3vw, 300px);
     height: clamp(250px, 4vw, 350px);
+    padding: 10px;
 }
 
 .profile-info-box2 {
@@ -69,6 +70,54 @@ header nav ul {
     margin: 10px;
     font-size: clamp(16px, 2vw, 24px);
     color: rgb(79, 175, 127);
+}
+
+.aboutme_grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    font-size: clamp(16px, 2vw, 20px);
+}
+
+.box1 {
+  display: grid;
+  grid-column: 2;
+}
+
+.box1-sectA {
+  justify-items: center;
+  padding: 10px;
+  margin: 10px;
+  font-size: clamp(16px, 2vw, 20px);
+}
+
+.box1-sectA h3, b {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(201, 147, 76);
+}
+
+.box1-sectB {
+  display: flex;
+  justify-items: center;
+}
+
+#mycv {
+  padding: 10px;
+  margin-left: 20px;
+  border-radius: 15px;
+  background-color: rgb(240, 186, 106);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.image2-box2 {
+  display: grid;
+  justify-content: center;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  width: 250px;
+  padding: 10px;
+  margin: 10px;
 }
 
 /* media queries for breakpoints */
