@@ -1,100 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="/assets/css/styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+  </head>
 
-    <body>
-        <header>
-            <nav>
-                <ul class="navbar">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#aboutme">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contactme">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+  <body>
+    <header>
+      <nav>
+        <ul class="navbar">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#aboutme">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contactme">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <!-- Look for a professional photo and discard the photo  -->
-        <div class="intro_grid-container">
-            <div id="home" class="profile-info-box2">
-                <h3>Hi 👋, I'm Kevin</h3>
-                <h4>Junior Web Developer</h4>
-            
-        
-                <div class="social-icons-box3">
-                    <a href="https://twitter.com/ace_kamaa" target="_blank" rel="noopener" title="My X space"><i class="fab fa-x"></i></a>
-                    <a href="https://www.linkedin.com/in/kevin-kamaa" target="_blank" rel="noopener" title="Visit my LinkedIn profile"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/acekamaa" target="_blank" rel="noopener" title="My codespace"><i class="fab fa-github"></i></a>
-                </div>
-            </div>  
+    <div class="intro_grid-container">
+      <div id="home" class="profile-info-box2">
+        <h3 id="myGreetings">Hi 👋, I'm Kevin</h3>
+        <h4 id="career-level">Junior Web Developer</h4>
+        <h5 id="future-career-perspective">Upcoming Backend Developer</h5>
 
-            <div class="box1-Span">
-                <img src="assets/images/me_pic_best.jpg" alt="My-photo" class="profile-picture">
-            </div>
+        <div class="social-icons-box3">
+          <a href="https://twitter.com/ace_kamaa" target="_blank" rel="noopener" title="My X space"
+            ><i class="fab fa-x"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/kevin-kamaa"
+            target="_blank"
+            rel="noopener"
+            title="Visit my LinkedIn profile"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/acekamaa" target="_blank" rel="noopener" title="My codespace"
+            ><i class="fab fa-github"></i
+          ></a>
         </div>
+      </div>
 
-        <div class="aboutme_grid-container" id="aboutme">
-            <div class="box1">
-                <div class="box1-sectA">
-                    <h3>About Me</h3>
-                    <article>
-                        I am a <span><b>Junior Web Developer</b></span> and recent <span><b>Information Technology graduate </b></span> from Kirinyaga University with a strong foundation in Software Development principles and a growing skill set in modern web technologies.
-                    </article>
-                </div>
+      <!-- replace this photo with a more professional one -->
+      <div class="profile-pic">
+        <!-- <img src="" alt=""> -->
+      </div>
+    </div>
 
-                <!-- add embeded <a> tags with links to the docs -->
-                <div class="box_sectB">
-                    <button type="button" id="mycv">Download CV</button>
-                </div>
-            </div>
+    <div class="aboutme_container" id="aboutme">
+      <div class="aboutme-article">
+        <h3>About Me</h3>
+        <article>
+          I am a junior web developer focused on building backend systems and responsive web
+          applications. I enjoy solving real-world problems through clean and structured code.
+          </article>
+      </div>
+        <!-- add embeded <a> tags with links to the docs -->
+      <div class="aboutme-resume">
+        <button type="button" id="myresume">Download Resume</button>
+      </div>
+    </div>
 
-            <div class="image2-box2">
-                <img src="assets/images/pic2.jpeg" alt="cartoon" id="cartoon">
-            </div>
-        </div>
+    <div class="skills" id="skills">
+      <h3>My Skills</h3>
+      <!-- replace this with the lang icons -->
+      <ul id="lang">
+        <li><img src="assets/images/html-5-logo-svgrepo-com.svg" alt="Official HTML 5 logo"> HTML 5</li>
+        <li><img src="assets/images/css-3-svgrepo-com.svg" alt="Official CSS logo"> CSS 3</li>
+        <li><img src="assets/images/js-official-svgrepo-com.svg" alt="Official Js logo"> JavaScript</li>
+        <li><img src="assets/images/java-svgrepo-com.svg" alt="Official Java logo"> Java</li>
+        <li><img src="assets/images/python-svgrepo-com.svg" alt="Official Python logo"> Python</li>
+      </ul>
+    </div>
 
-        <div class="skills" id="skills">
-            <h3>My Skills</h3>
-            <!-- replace this with the lang icons -->
-            <ul id="lang">
-                <li>HTML 5</li>
-                <li>CSS 3</li>
-                <li>JavaScript</li>
-                <li>Java</li>
-                <li>Python</li>
-            </ul>
-        </div>
+    <div id="projects">
+    <!-- display projects in individual containers -->
+    </div>
 
-        <div id="projects">
-            <!-- display projects in individual containers -->
-        </div>
+    <div id="contactme">
+      <h3>Contact Me</h3>
+      <form action="post">
+        <label for="name">Name: </label>
+        <input type="text" name="uname" id="name" /><br />
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" /><br />
+        <label for="phone">Phone:</label>
+        <input type="text" name="phone" id="phone" /><br />
+        <label for="comment">Comment:</label>
+        <textarea name="comment" id="comment" cols="20" rows="5"></textarea>
+      </form>
+    </div>
 
-        <div id="contactme">
-            <h3>Contact Me</h3>
-            <form action="post">
-                <label for="name">Name: </label>
-                <input type="text" name="uname" id="name"><br>
-                <label for="email">Email:</label>
-                <input type="text" name="email" id="email"><br>
-                <label for="phone">Phone:</label>
-                <input type="text" name="phone" id="phone"><br>
-                <label for="comment">Comment:</label>
-                <textarea name="comment" id="comment" cols="20" rows="5"></textarea>
-            </form>
-        </div>
-
-        <footer>
-            <p>&copy; acekamaa 2025.</p>
-            <p>All rights reserved.</p>
-        </footer>
-        <script src="script.js"></script>
-    </body>
+    <footer>
+      <p>&copy; acekamaa 2025.</p>
+      <p>All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

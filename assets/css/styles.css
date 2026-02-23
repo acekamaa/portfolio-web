@@ -1,123 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1.5rem;
+}
+
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1rem;
-    color: white;
-    background-color:rgb(3, 3, 34);
-    height: 100vh;
-    width: 100vw;
+  font-family:
+    'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1rem;
+  color: white;
+  background-color: rgb(21, 21, 59);
+  height: 100vh;
+  width: 100vw;
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    margin: 2px;
-    padding: 3px;
-    border-bottom: 3px solid rgb(26, 26, 27);
+  display: flex;
+  justify-content: center;
+  margin: 2px;
+  padding: 3px;
+  border-bottom: 3px solid rgb(36, 82, 55);
 }
 
 header nav ul {
-    display: flex;
-    list-style-type: none;
-    padding: 5px;
-    gap: 20px;
+  display: flex;
+  list-style-type: none;
+  padding: 5px;
+  gap: 20px;
 }
 
 .navbar li a {
-    display: flex;
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
 }
 
 .navbar li a:hover {
-    display: flex;
-    transform: scale(1.2);
-    background-color: rgb(112, 173, 105);
-    padding: 3px;
+  display: flex;
+  transform: scale(1.2);
+  background-color: rgb(112, 173, 105);
+  padding: 3px;
 }
 
 .intro_grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
-    font-size: clamp(10px, 2vw, 24px);
-    padding: 10px;
-    margin: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  font-size: clamp(14px, 2vw, 24px);
+  padding: 10px;
+  margin: 15px;
 }
 
 .box1-Span {
-    display: grid;
-    grid-column: 2;
-    grid-row: 1 / span 2;
-    width: 250px;
+  display: grid;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  width: 250px;
+  margin-left: 140px;
 }
 
 .box1-Span img {
-    width: clamp(200px, 3vw, 300px);
-    height: clamp(250px, 4vw, 350px);
-    padding: 10px;
+  width: clamp(200px, 3vw, 300px);
+  height: clamp(250px, 4vw, 350px);
+  padding: 10px;
 }
 
 .profile-info-box2 {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    font-size: clamp(16px, 2vw, 24px);
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  font-size: clamp(16px, 2vw, 24px);
+  align-items: center;
+}
+
+#myGreetings {
+  display: flex;
+  padding: 10px;
+  margin-top: 5rem;
+}
+
+#career-level,
+#future-career-perspective {
+  display: flex;
+  padding: 10px;
+}
+
+#future-career-perspective {
+  color: chocolate;
+  font-size: clamp(12px, 2.5vw, 24px);
 }
 
 .social-icons-box3 a {
-    margin: 10px;
-    font-size: clamp(16px, 2vw, 24px);
-    color: rgb(79, 175, 127);
+  margin: 10px;
+  font-size: clamp(12px, 2vw, 1.3rem);
+  color: rgb(79, 175, 127);
 }
 
-.aboutme_grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
-    font-size: clamp(16px, 2vw, 20px);
-}
+/* remove comment markers after adding professional picture */
 
-.box1 {
+/* .profile-picture {
   display: grid;
   grid-column: 2;
-}
+} */
 
-.box1-sectA {
-  justify-items: center;
-  padding: 10px;
-  margin: 10px;
+.aboutme_container > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: clamp(16px, 2vw, 20px);
+  margin: 4.5em;
+  padding: 10px;
 }
 
-.box1-sectA h3, b {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.aboutme-article h3 {
+  display: flex;
+  justify-items: center;
   color: rgb(201, 147, 76);
 }
 
-.box1-sectB {
+.aboutme-article article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: -10px;
+}
+
+.aboutme-resume {
   display: flex;
   justify-items: center;
+  margin-top: -70px;
 }
 
-#mycv {
+#myresume {
   padding: 10px;
-  margin-left: 20px;
+  margin-left: 10px;
   border-radius: 15px;
-  background-color: rgb(240, 186, 106);
+  background-color: rgb(109, 67, 3);
   font-size: 14px;
   font-weight: bold;
+  color: wheat;
 }
 
-.image2-box2 {
-  display: grid;
-  justify-content: center;
-  grid-column: 1;
-  grid-row: 1 / span 2;
-  width: 250px;
-  padding: 10px;
+#myresume:hover {
+  cursor: pointer;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4.5em;
+  font-size: clamp(16px, 2vw, 20px);
+}
+
+.skills h3 {
+  align-self: center;
+  color: rgb(201, 147, 76);
+}
+
+.skills ul li {
+  list-style-type: none;
   margin: 10px;
+  padding: 10px;
+}
+
+#lang {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1rem;
+}
+
+#lang li img {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50px;
 }
 
 /* media queries for breakpoints */
