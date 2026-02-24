@@ -3,105 +3,123 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="/assets/css/styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+    <title>Kevin Kamau | Backend Developer</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
 
   <body>
+    <!-- ===== NAVBAR ===== -->
     <header>
-      <nav>
-        <ul class="navbar">
+      <nav class="navbar">
+        <h2 class="logo">Kevin Kamau</h2>
+
+        <ul class="nav-links">
           <li><a href="#home">Home</a></li>
-          <li><a href="#aboutme">About</a></li>
-          <li><a href="#skills">Skills</a></li>
+          <li><a href="#stack">Stack</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#contactme">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <div class="intro_grid-container">
-      <div id="home" class="profile-info-box2">
-        <h3 id="myGreetings">Hi 👋, I'm Kevin</h3>
-        <h4 id="career-level">Junior Web Developer</h4>
-        <h5 id="future-career-perspective">Upcoming Backend Developer</h5>
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Backend Developer</h1>
+        <h2>Node.js & Express Specialist</h2>
 
-        <div class="social-icons-box3">
-          <a href="https://twitter.com/ace_kamaa" target="_blank" rel="noopener" title="My X space"
-            ><i class="fab fa-x"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/kevin-kamaa"
-            target="_blank"
-            rel="noopener"
-            title="Visit my LinkedIn profile"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a href="https://github.com/acekamaa" target="_blank" rel="noopener" title="My codespace"
-            ><i class="fab fa-github"></i
-          ></a>
+        <p>
+          I design and build REST APIs, authentication systems, and data-driven backend applications
+          focused on scalability, clean architecture, and production-ready performance.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-primary">View Backend Projects</a>
+          <a href="#contact" class="btn-secondary">Contact Me</a>
         </div>
       </div>
+    </section>
 
-      <!-- replace this photo with a more professional one -->
-      <div class="profile-pic">
-        <!-- <img src="" alt=""> -->
-      </div>
-    </div>
+    <!-- ===== TECH STACK ===== -->
+    <section id="stack" class="section">
+      <h3>Core Backend Stack</h3>
 
-    <div class="aboutme_container" id="aboutme">
-      <div class="aboutme-article">
-        <h3>About Me</h3>
-        <article>
-          I am a junior web developer focused on building backend systems and responsive web
-          applications. I enjoy solving real-world problems through clean and structured code.
-          </article>
-      </div>
-        <!-- add embeded <a> tags with links to the docs -->
-      <div class="aboutme-resume">
-        <button type="button" id="myresume">Download Resume</button>
-      </div>
-    </div>
+      <div class="grid">
+        <div class="card">
+          <h4>Backend</h4>
+          <p>Node.js, Express.js, RESTful APIs</p>
+        </div>
 
-    <div class="skills" id="skills">
-      <h3>My Skills</h3>
-      <!-- replace this with the lang icons -->
-      <ul id="lang">
-        <li><img src="assets/images/html-5-logo-svgrepo-com.svg" alt="Official HTML 5 logo"> HTML 5</li>
-        <li><img src="assets/images/css-3-svgrepo-com.svg" alt="Official CSS logo"> CSS 3</li>
-        <li><img src="assets/images/js-official-svgrepo-com.svg" alt="Official Js logo"> JavaScript</li>
-        <li><img src="assets/images/java-svgrepo-com.svg" alt="Official Java logo"> Java</li>
-        <li><img src="assets/images/python-svgrepo-com.svg" alt="Official Python logo"> Python</li>
+        <div class="card">
+          <h4>Databases</h4>
+          <p>PostgreSQL, MongoDB</p>
+        </div>
+
+        <div class="card">
+          <h4>Authentication</h4>
+          <p>JWT, bcrypt, Role-Based Access</p>
+        </div>
+
+        <div class="card">
+          <h4>Tools</h4>
+          <p>Git, Postman, Linux</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section">
+      <h3>Featured Backend Projects</h3>
+
+      <div class="project-placeholder">
+        <p>
+          Backend projects coming soon. APIs with authentication, database relationships, and
+          production-ready deployment will be showcased here.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== ARCHITECTURE SECTION ===== -->
+    <section class="section">
+      <h3>How I Build Backend Systems</h3>
+
+      <ul class="architecture-list">
+        <li>Modular folder structure</li>
+        <li>Environment-based configuration</li>
+        <li>Secure authentication implementation</li>
+        <li>Database normalization & relationships</li>
+        <li>Error handling & validation middleware</li>
       </ul>
-    </div>
+    </section>
 
-    <div id="projects">
-    <!-- display projects in individual containers -->
-    </div>
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section">
+      <h3>About Me</h3>
+      <p class="about-text">
+        I am a backend-focused developer passionate about designing structured APIs and scalable
+        server-side systems. My goal is to build clean, secure, and efficient backend architectures
+        that power real-world applications.
+      </p>
+    </section>
 
-    <div id="contactme">
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section">
       <h3>Contact Me</h3>
-      <form action="post">
-        <label for="name">Name: </label>
-        <input type="text" name="uname" id="name" /><br />
-        <label for="email">Email:</label>
-        <input type="text" name="email" id="email" /><br />
-        <label for="phone">Phone:</label>
-        <input type="text" name="phone" id="phone" /><br />
-        <label for="comment">Comment:</label>
-        <textarea name="comment" id="comment" cols="20" rows="5"></textarea>
-      </form>
-    </div>
 
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
     <footer>
-      <p>&copy; acekamaa 2025.</p>
-      <p>All rights reserved.</p>
+      <p>© <span id="year"></span> Kevin Kamau | Backend Developer</p>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
