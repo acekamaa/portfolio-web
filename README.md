@@ -32,3 +32,14 @@ It includes:
 ---
 
 ## 🧱 Project Structure
+src
+|_assets/
+|   |_css/
+|       |_styles.css
+|   |
+|   |_js/
+|       |_script.js
+|
+|_index.html
+|_README.md
+
